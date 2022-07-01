@@ -1,0 +1,55 @@
+
+.project-card{
+    display: flex;
+}
+
+.show-hover{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    animation: zoom-out 0.1s linear 0s 1, emit-shadow 1s linear 0s infinite;
+}
+
+@keyframes emit-shadow {
+    from{
+        box-shadow: 0px 0px 5px black;
+    }
+    to{
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0);
+    }
+}
+
+
+@keyframes zoom-out {
+    from{
+        width: 0rem;
+        height: 0rem;
+        font-size: 0.001rem;
+    }
+    to{
+        width: 7rem;
+        height: 7rem;
+        font-size: 1rem;
+    }
+}
+
+.hide-hover{
+    display: none;
+}
+
+.hover-round{
+    
+    border-radius: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    object-fit: contain;
+    
+    background-color: aqua;
+    padding: 10px;
+}

@@ -1,0 +1,74 @@
+.music-box{
+    position:fixed; 
+    top:1rem; 
+    right:1rem; 
+    height:fit-content; 
+    width:auto; 
+    display:flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.music-box:hover{
+    cursor: pointer;
+}
+
+.msg{
+    font-weight: 500;
+    color: #f1f1f1;
+    margin: 0 10px;
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+}
+
+.loader .stroke{
+    display: block;
+    position: relative;
+    background: #f1f1f1;
+    height: 100%;
+    width: 2px;
+    border-radius: 50px;
+    margin: 0 1px;
+}
+
+.play{
+    animation: animate 1s linear infinite;
+}
+
+.dont-play{
+    animation: none;
+}
+
+@keyframes animate{
+    50%{
+        height: 20%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.stroke:nth-child(1){
+    animation-delay: 0s;
+}
+.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(6){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(7){
+    animation-delay: 0s;
+}

@@ -1,0 +1,20 @@
+.tab-item{
+    margin: 2px 0px;
+    width: 54px;
+}
+
+.item{
+    color:white; 
+    padding:10px 100px 10px 20px;
+}
+
+.expand{
+    animation: tag-flag 0.2s 1 ease-out forwards;
+}
+
+@keyframes tag-flag {
+    to{
+        transform: translateX(-50px);
+        border-radius: 50px 0 0 50px;
+    }
+}
