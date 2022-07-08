@@ -11,6 +11,7 @@ import MusicBox from './components/MusicBox/MusicBox';
 import SocialSideTab from './components/SocialSideTab/SocialSideTab';
 import Footer from './components/Footer/Footer';
 import BackgroundGalaxy from './components/BackgroundGalaxy/BackgroundGalaxy';
+import ResumeBtn from './components/ResumeBtn/ResumeBtn';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <MusicBox />
       <SocialSideTab />
       <BackgroundGalaxy/>
+      <ResumeBtn />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/skills' element={<Skills />} />

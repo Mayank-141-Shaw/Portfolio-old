@@ -21,7 +21,7 @@ function Home() {
   }
 
   return (
-    <div style={{zIndex:'2'}}>
+    <div style={{zIndex:'2', color:'white'}}>
       <Container fluid style={{backgroundColor:'red', height:'100vh', display:'flex',
           flexDirection:'column', alignItems:'center'}}>
         <Container className="text-zone my-auto " >
