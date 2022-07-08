@@ -21,31 +21,24 @@ function History() {
   return (
     <>
       <Container className='text-white'>
-        <Row>
+        <Row className="text-center">
           <h1 className='mt-5'>Timeline</h1>
           <h5>A brief history of my works and achievements</h5>
         </Row>
         
         <Container>
-          <Badge className='year'>2022</Badge>
-          
           <Row>
             <Col md={12} xs={12} lg={12}>
-              <ProjectDetailBox info={data} />
-
+              
               <Row className='my-5 align-items-center'>
                 <Col className='right-rotated' md={6}>
                   <Image className='big-img' src={bigImg}/>
                 </Col>
-                <Col md={6}>
-                  <h3>Title</h3>
-                  <div>
-                    <Badge>HTML</Badge>
-                    <Badge>HTML</Badge>
-                    
-                  </div>
-                  <p>Lorem34dsd dsds jndbdsd dbushds dsdsu</p>
-                  <Button style={{width:'fit-content'}} size='sm'><BsGithub/> Github</Button>
+                <Col md={6} style={{textAlign:'right'}}>
+                  <h3>NeoSoft Technologies</h3>
+                  <Badge className='year'>2021</Badge>
+                  <Badge className='year'>2022</Badge>
+                  <p>Company where I joined as a full time Full Stack Developer</p>
                 </Col>
               </Row>
             </Col>

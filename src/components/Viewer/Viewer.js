@@ -14,7 +14,7 @@ function Viewer(props) {
 
   return (
     <>
-        <Image src={props.src} width={'100%'} onClick={handleShow} 
+        <Image className='my-3' src={props.src} width={'100%'} onClick={handleShow} 
             onMouseEnter={toggleHover} onMouseLeave={toggleHover}/>
 
         <Modal show={show} onHide={handleClose} size={'lg'}>

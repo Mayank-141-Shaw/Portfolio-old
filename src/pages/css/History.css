@@ -1,0 +1,37 @@
+.big-img{
+    width: 100%;
+}
+
+.right-rotated{
+    transform: perspective(30rem) rotateY(30deg);
+}
+
+.right-rotated:hover{
+    animation: rotate-smooth-right 0.7s ease-in-out 0s 1 forwards;
+}
+
+@keyframes rotate-smooth-right {
+    to{
+        transform: perspective(30rem) rotateY(0deg);
+    }
+}
+
+
+.left-rotated{
+    transform: perspective(30rem) rotateY(-30deg);
+}
+
+.left-rotated:hover{
+    animation: rotate-smooth-left 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes rotate-smooth-left {
+    to{
+        transform: perspective(30rem) rotateY(0deg);
+    }
+}
+
+
+.badge{
+    margin: 0.3rem 0.3rem;
+}

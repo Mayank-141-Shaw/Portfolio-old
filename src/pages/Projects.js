@@ -13,8 +13,20 @@ const data = {
   img: bigImg,
   title: "Hello World",
   badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-  desc: "theis is the description of the body of the project"
+  desc: "theis is the description of the body of the project",
+  link:'https://github.com/Mayank-141-Shaw/Portfolio'
 }
+
+const data2 = {
+  dir: "left",
+  img: bigImg,
+  title: "Hello World",
+  badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
+  desc: "theis is the description of the body of the project",
+  link:'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js'
+}
+
+
 
 function Projects() {
   
@@ -29,27 +41,10 @@ function Projects() {
         <Container>
           <Badge className='year'>2022</Badge>
           
-          <Row>
-            <Col md={12} xs={12} lg={12}>
-              <ProjectDetailBox info={data} />
+          <ProjectDetailBox info={data} />
+          <ProjectDetailBox info={data2} />
 
-              <Row className='my-5 align-items-center'>
-                <Col className='right-rotated' md={6}>
-                  <Image className='big-img' src={bigImg}/>
-                </Col>
-                <Col md={6}>
-                  <h3>Title</h3>
-                  <div>
-                    <Badge>HTML</Badge>
-                    <Badge>HTML</Badge>
-                    
-                  </div>
-                  <p>Lorem34dsd dsds jndbdsd dbushds dsdsu</p>
-                  <Button style={{width:'fit-content'}} size='sm'><BsGithub/> Github</Button>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+          
         </Container>
         
       </Container>

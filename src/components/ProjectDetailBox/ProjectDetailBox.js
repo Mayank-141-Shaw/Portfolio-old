@@ -6,18 +6,21 @@ import './ProjectDetailBox.css'
 import { BsGithub } from 'react-icons/bs'
 
 
-const colors = ['red', 'purple', 'green', 'orange', 'black', 'blue']
+
 
 
 function ProjectDetailBox(props) {
 
+    const colors = ['red', 'purple', 'green', 'orange', 'black', 'blue']
     
     const randomColor = () => {
         let cc = colors[Math.floor(Math.random()*6)]+'!important'
-        
-        console.log(cc)
         return cc
     }   
+
+    const gotoPage = () => {
+        window.open(props.info.link, "_blank")
+    }
 
     return (
     <Row className='my-5 align-items-center'>
@@ -27,28 +30,28 @@ function ProjectDetailBox(props) {
                 <Col className={props.info.dir == 'right' ? 'left-rotated' : 'right-rotated'} md={6}>
                     <Image className='big-img' src={props.info.img}/>
                 </Col>
-                <Col md={6}>
+                <Col md={6} style={{textAlign:'right'}}>
                     <h3>{props.info.title}</h3>
                     <div>
                         {props.info.badges.map( badge => {
-                            return <Badge style={{backgroundColor:randomColor()}} >{badge}</Badge>
+                            return <Badge style={{backgroundColor:'red!important'}} >{badge}</Badge>
                         })}
                     </div>
                     <p>{props.info.desc}</p>
-                    <Button style={{width:'fit-content'}} size='sm'><BsGithub/> Github</Button>
+                    <Button style={{width:'fit-content'}} size='sm' onClick={gotoPage}><BsGithub/> Github</Button>
                 </Col>
             </> 
             : 
             <>
-                <Col md={6}>
+                <Col md={6} style={{textAlign:'left'}}>
                     <h3>{props.info.title}</h3>
                     <div>
                         {props.info.badges.map( badge => {
-                            return <Badge style={{backgroundColor:randomColor()}}>{badge}</Badge>
+                            return <Badge style={{backgroundColor:'red!important'}}>{badge}</Badge>
                         })}
                     </div>
                     <p>{props.info.desc}</p>
-                    <Button style={{width:'fit-content'}} size='sm'><BsGithub/> Github</Button>
+                    <Button style={{width:'fit-content'}} size='sm' onClick={gotoPage}><BsGithub/> Github</Button>
                 </Col>
                 <Col className={props.info.dir == 'right' ? 'left-rotated' : 'right-rotated'} md={6}>
                     <Image className='big-img' src={props.info.img}/>
