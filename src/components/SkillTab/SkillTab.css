@@ -1,0 +1,64 @@
+.skill-tab{
+    background-color: rgba(26, 26, 26, 0.5);
+    color: white;
+    padding: 0 1rem;
+    margin: 0.7rem 0;
+    aspect-ratio: 1;
+    box-shadow: 4px 4px 20px black;
+}
+
+.skill-tab:hover{
+    box-shadow: 5px 5px 25px black;
+}
+
+.skill-tab-img{
+    aspect-ratio: 1;
+    padding: 1rem;
+}
+
+.skill-tab-text{
+    padding-bottom: 0.5rem;
+}
+
+.skill-img{
+    width: 100%;
+}
+
+.modal-content{
+    background-color: rgba(19, 19, 19, 0.925);
+    color: white;
+    border-radius: 0px;
+    min-width: fit-content;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.modal-footer{
+    border-top: none;
+}
+
+hr{
+    height: 2px;
+    margin: 0px;
+    margin-block: none;
+    margin-inline: none;
+    background: rgb(255, 153, 0);
+    opacity: 1;
+}
+
+.rate{
+    display: block;
+    margin-top: 0.5rem;
+    width: fit-content;
+}
+
+.desc{
+
+}
+
+.exp{
+    background-color: purple;
+    margin-top: 0.5rem;
+}

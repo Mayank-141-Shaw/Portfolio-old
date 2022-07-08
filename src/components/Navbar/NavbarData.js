@@ -10,6 +10,18 @@ export const SidebarData = [
         cName: 'nav-text' 
     },
     {
+        title: 'History',
+        path: '/history',
+        icon: <BsIcons.BsClockHistory />,
+        cName: 'nav-text' 
+    },
+    {
+        title: 'Projects',
+        path: '/project',
+        icon: <AIcons.AiOutlineProject />,
+        cName: 'nav-text' 
+    },
+    {
         title: 'Skills',
         path: '/skills',
         icon: <BsIcons.BsCodeSlash />,
