@@ -11,6 +11,9 @@ import './css/Home.css'
 import ProjectBox from '../components/ProjectBox/ProjectBox'
 
 
+import chillImg from '../assets/images/chill.jpg'
+
+
 function Home() {
 
   
@@ -124,16 +127,16 @@ function Home() {
 
         <Row className='justify-content-center'>
           <Col md={4} xs={12} lg={4} style={{padding:'0'}}>
-            <ProjectBox color='red'/>
+            <ProjectBox color='red' img={chillImg} />
           </Col>
           <Col md={4} xs={12} lg={4} style={{padding:'0'}}>
-            <ProjectBox color='blue'/>
+            <ProjectBox color='blue' img={chillImg} />
           </Col>
           <Col md={4} xs={12} lg={4} style={{padding:'0'}}>
-            <ProjectBox color='green'/>
+            <ProjectBox color='green' img={chillImg} />
           </Col>
           <Col md={4} xs={12} lg={4} style={{padding:'0'}}>
-            <ProjectBox color='yellow'/>
+            <ProjectBox color='yellow' img={chillImg} />
           </Col>
           
         </Row>

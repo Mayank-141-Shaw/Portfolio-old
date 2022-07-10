@@ -1,6 +1,9 @@
 
 .project-card{
     display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .show-hover{
@@ -45,11 +48,14 @@
     text-transform: uppercase;
     width: 7rem;
     height: 7rem;
+    
     position: relative;
     text-align: center;
     margin: auto;
     object-fit: contain;
-    
+    color: black;
     background-color: aqua;
     padding: 10px;
+    z-index: 3;
+    
 }
