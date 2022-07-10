@@ -1,0 +1,15 @@
+.skill-shortcut{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 102, 255);
+    padding: 0.3rem 0.9rem;
+    height: fit-content;
+    width: auto;
+    border-radius: 5px;
+    margin: 0.3rem;
+}
+
+.skill-shortcut:hover{
+    color: white;
+    background-color: rgb(0, 86, 214);
+}
