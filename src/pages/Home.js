@@ -126,19 +126,30 @@ function Home() {
         </Row>
 
         <Row className='justify-content-center'>
-          <Col md={4} xs={12} lg={4} style={{padding:'0'}}>
+          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
             <ProjectBox color='red' img={chillImg} />
           </Col>
-          <Col md={4} xs={12} lg={4} style={{padding:'0'}}>
+          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
             <ProjectBox color='blue' img={chillImg} />
           </Col>
-          <Col md={4} xs={12} lg={4} style={{padding:'0'}}>
+          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
             <ProjectBox color='green' img={chillImg} />
           </Col>
-          <Col md={4} xs={12} lg={4} style={{padding:'0'}}>
+          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
             <ProjectBox color='yellow' img={chillImg} />
           </Col>
-          
+          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+            <ProjectBox color='green' img={chillImg} />
+          </Col>
+          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+            <ProjectBox color='green' img={chillImg} />
+          </Col>
+          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+            <ProjectBox color='green' img={chillImg} />
+          </Col>
+          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+            <ProjectBox color='green' img={chillImg} />
+          </Col>
         </Row>
         </Container>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
