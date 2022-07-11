@@ -5,16 +5,13 @@ import './css/History.css'
 
 import { BsGithub } from 'react-icons/bs'
 
-import bigImg from '../assets/images/chill.jpg'
+import neosoftImg from '../assets/images/neosoft.jpg'
+import ebrainImg from '../assets/images/ebrain.jpg'
+import sambhramImg from '../assets/images/sambhram.jpg'
+import sxiImg from '../assets/images/sxi.jpg'
+
 import ProjectDetailBox from '../components/ProjectDetailBox/ProjectDetailBox'
 
-const data = {
-  dir: "right",
-  img: bigImg,
-  title: "Hello World",
-  badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot'],
-  desc: "theis is the description of the body of the project"
-}
 
 function History() {
   
@@ -32,7 +29,7 @@ function History() {
               
               <Row className='my-5 align-items-center'>
                 <Col className='right-rotated' md={6}>
-                  <Image className='big-img' src={bigImg}/>
+                  <Image className='big-img' src={neosoftImg}/>
                 </Col>
                 <Col md={6} style={{textAlign:'right'}}>
                   <h3>NeoSoft Technologies</h3>
@@ -41,6 +38,47 @@ function History() {
                   <p>Company where I joined as a full time Full Stack Developer</p>
                 </Col>
               </Row>
+
+              <Row className='my-5 align-items-center'>
+                <Col md={6} style={{textAlign:'left'}}>
+                  <h3>E-Brain Softech Pvt Ltd</h3>
+                  <Badge className='year'>2020</Badge>
+                  <p>Company where I joined as a Machine Learning Intern.</p>
+                </Col>
+                <Col className='left-rotated' md={6}>
+                  <Image className='big-img' src={ebrainImg}/>
+                </Col>
+              </Row>
+
+              <Row className='my-5 align-items-center'>
+                <Col className='right-rotated' md={6}>
+                  <Image className='big-img' src={sambhramImg}/>
+                </Col>
+                <Col md={6} style={{textAlign:'right'}}>
+                  <h3>Sambhram Institute of Technology</h3>
+                  <Badge className='year'>2018</Badge>
+                  <Badge className='year'>2019</Badge>
+                  <Badge className='year'>2020</Badge>
+                  <Badge className='year'>2021</Badge>               
+                  <p>My college where I pursued my Bachelor's of Engineering
+                      in Computer Science and Engineering ( BE CSE )
+                  </p>
+                </Col>
+              </Row>
+
+              <Row className='my-5 align-items-center'>
+                <Col md={6} style={{textAlign:'left'}}>
+                  <h3>St. Xavier's Institution ( XII )</h3>
+                  <Badge className='year-start'>2015</Badge>
+                  <Badge className='year-start'>2015</Badge>
+                  <Badge className='year-end'>2017</Badge>
+                  <p>My school where I completed my higher secondary in Science Stream</p>
+                </Col>
+                <Col className='left-rotated' md={6}>
+                  <Image className='big-img' src={sxiImg}/>
+                </Col>
+              </Row>
+
             </Col>
           </Row>
         </Container>

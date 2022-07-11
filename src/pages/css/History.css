@@ -35,3 +35,17 @@
 .badge{
     margin: 0.3rem 0.3rem;
 }
+
+.year{
+    padding: 0.6rem 1rem;
+}
+
+.year-end{
+    padding: 0.6rem 1rem;
+    background: red!important;
+}
+
+.year-start{
+    padding: 0.6rem 1rem;
+    background: green!important;
+}
