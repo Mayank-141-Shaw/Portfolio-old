@@ -12,6 +12,11 @@
     filter: brightness(0.9);
 }
 
+.project-card:hover{
+    border: 5px solid black;
+    padding: 5px;
+}
+
 .show-hover{
     display: flex;
     cursor: pointer;

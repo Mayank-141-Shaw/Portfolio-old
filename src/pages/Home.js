@@ -10,6 +10,8 @@ import Typed from 'react-typed-v2'
 import './css/Home.css'
 import ProjectBox from '../components/ProjectBox/ProjectBox'
 
+import chillImg from '../assets/images/chill.jpg'
+
 
 import chillImg from '../assets/images/chill.jpg'
 
@@ -113,47 +115,50 @@ function Home() {
 
       <div >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#0099ff" fillOpacity="1" 
+          <path fill="#0099ff55" fillOpacity="1" 
             d="M0,32L34.3,58.7C68.6,85,137,139,206,133.3C274.3,128,343,64,411,80C480,96,549,192,617,202.7C685.7,213,754,139,823,117.3C891.4,96,960,128,1029,149.3C1097.1,171,1166,181,1234,165.3C1302.9,149,1371,107,1406,85.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
           </path>
         </svg>
-        <Container style={{margin:'5rem auto'}}>
-        <Row style={{textAlign:'center', margin:'4rem 0'}}>
-          <Typed className='big-head'
-            strings={["Projects", "Works"]}
-            typeSpeed={150}
-            backSpeed={100} loop/>
-        </Row>
+        <div style={{backgroundColor:'#0099ff55'}}>
+          <Container style={{padding:'5rem auto'}}>
+            <Row style={{textAlign:'center', padding:'4rem 0'}}>
+              <Typed className='big-head'
+                strings={["Projects", "Works"]}
+                typeSpeed={150}
+                backSpeed={100} loop/>
+            </Row>
 
-        <Row className='justify-content-center'>
-          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-            <ProjectBox color='red' img={chillImg} />
-          </Col>
-          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-            <ProjectBox color='blue' img={chillImg} />
-          </Col>
-          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-            <ProjectBox color='green' img={chillImg} />
-          </Col>
-          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-            <ProjectBox color='yellow' img={chillImg} />
-          </Col>
-          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-            <ProjectBox color='green' img={chillImg} />
-          </Col>
-          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-            <ProjectBox color='green' img={chillImg} />
-          </Col>
-          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-            <ProjectBox color='green' img={chillImg} />
-          </Col>
-          <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-            <ProjectBox color='green' img={chillImg} />
-          </Col>
-        </Row>
-        </Container>
+            <Row className='justify-content-center'>
+              <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+                <ProjectBox img={chillImg}/>
+              </Col>
+              <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+                <ProjectBox img={chillImg}/>
+              </Col>
+              <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+                <ProjectBox img={chillImg}/>
+              </Col>
+              <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+                <ProjectBox img={chillImg}/>
+              </Col>
+              <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+                <ProjectBox img={chillImg}/>
+              </Col>
+              <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+                <ProjectBox img={chillImg}/>
+              </Col>
+              <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+                <ProjectBox img={chillImg}/>
+              </Col>
+              <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
+                <ProjectBox img={chillImg}/>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#0099ff" fillOpacity="1" d="M0,320L34.3,314.7C68.6,309,137,299,206,272C274.3,245,343,203,411,181.3C480,160,549,160,617,176C685.7,192,754,224,823,224C891.4,224,960,192,1029,192C1097.1,192,1166,224,1234,234.7C1302.9,245,1371,235,1406,229.3L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+          <path fill="#0099ff55" fillOpacity="1" d="M0,320L34.3,314.7C68.6,309,137,299,206,272C274.3,245,343,203,411,181.3C480,160,549,160,617,176C685.7,192,754,224,823,224C891.4,224,960,192,1029,192C1097.1,192,1166,224,1234,234.7C1302.9,245,1371,235,1406,229.3L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
           </path>
         </svg>
       </div>
