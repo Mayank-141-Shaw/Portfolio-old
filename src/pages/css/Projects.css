@@ -1,4 +1,14 @@
+
 .year{
     padding: 0.6rem 1rem;
+}
+
+.year-end{
+    padding: 0.6rem 1rem;
     background: red!important;
+}
+
+.year-start{
+    padding: 0.6rem 1rem;
+    background: green!important;
 }

@@ -39,7 +39,7 @@ function Projects() {
         </Row>
         
         <Container>
-          <Badge className='year'>2022</Badge>
+          <Badge className='year-end'>2022</Badge>
           
           <ProjectDetailBox info={data} />
           <ProjectDetailBox info={data2} />
