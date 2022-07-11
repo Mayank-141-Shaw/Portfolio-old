@@ -13,9 +13,6 @@ import ProjectBox from '../components/ProjectBox/ProjectBox'
 import chillImg from '../assets/images/chill.jpg'
 
 
-import chillImg from '../assets/images/chill.jpg'
-
-
 function Home() {
 
   
