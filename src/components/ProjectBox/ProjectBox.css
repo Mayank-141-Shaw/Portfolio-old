@@ -1,6 +1,15 @@
 
 .project-card{
     display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card:hover{
+    border: 5px solid black;
+    padding: 5px;
+    filter: brightness(0.9);
 }
 
 .project-card:hover{
@@ -13,6 +22,7 @@
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
+    backdrop-filter: brightness(0.5);
     animation: zoom-out 0.1s linear 0s 1, emit-shadow 1s linear 0s infinite;
 }
 
@@ -50,12 +60,14 @@
     text-transform: uppercase;
     width: 7rem;
     height: 7rem;
+    font-weight: 600;
     position: relative;
     text-align: center;
     margin: auto;
     object-fit: contain;
     color: black;
-    font-weight: 600;
     background-color: aqua;
     padding: 10px;
+    z-index: 3;
+    
 }

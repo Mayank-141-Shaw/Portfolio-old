@@ -17,7 +17,7 @@ function SkillTab(props) {
             <Image className='skill-img' src={props.icon} />
         </Row>
         <hr style={{width:props.score+'%', height:'4px'}} />
-        <p className='skill-tab-text'>{props.title}</p>
+        <p className='skill-tab-text text-center'>{props.title}</p>
       </div>
 
       <Modal show={show} onHide={handleClose} centered={true} >
@@ -30,8 +30,8 @@ function SkillTab(props) {
               <Col md={3} xs={3} lg={3} className='skill-tab-img'>
                 <Image src={props.icon} className='skill-img' />
               </Col>
-              <Col md={9} xs={9} lg={9} >
-                <ProgressBar animated now={props.score} variant={parseInt(props.score) > 75 ? 'danger' : parseInt(props.score) < 40 ? 'info' : 'success'} />
+              <Col md={9} xs={9} lg={9}>
+                <ProgressBar style={{margin:'0.6rem 0.3rem'}} animated now={props.score} variant={parseInt(props.score) > 75 ? 'danger' : parseInt(props.score) < 40 ? 'info' : 'success'} />
                 
                 <Badge bg={parseInt(props.score) > 75 ? 'danger' : parseInt(props.score) < 40 ? 'info' : 'success'} 
                   className='rate'>{parseInt(props.score) > 75 ? 'Advanced' : 

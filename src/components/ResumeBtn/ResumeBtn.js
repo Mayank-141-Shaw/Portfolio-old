@@ -1,9 +1,7 @@
 import React from 'react'
-import { Button, Image, Modal, OverlayTrigger, Tooltip } from 'react-bootstrap'
+import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FaDownload } from 'react-icons/fa'
-
-import resume from '../../assets/docs/resume.txt'
 
 import './ResumeBtn.css'
 
@@ -22,7 +20,7 @@ function ResumeBtn() {
         overlay={renderTooltip}
     >
         <div className='resume'>
-            <a href={resume} download="Mayank-Resume"><FaDownload /> Resume</a>
+            <a href='/resume.pdf' download="Mayank-Resume"><FaDownload /> Resume</a>
         </div>
     </OverlayTrigger>  
   )

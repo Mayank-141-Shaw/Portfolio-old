@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './ProjectBox.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Image } from 'react-bootstrap'
 
 function ProjectBox(props) {
 
@@ -19,6 +21,7 @@ function ProjectBox(props) {
             backgroundPosition:'center'
         }}
                 onMouseEnter={toggleHoverViewButton} onMouseLeave={toggleHoverViewButton}>
+               
             <div className={`hover-round ${toggleViewProjectBtn ? 'show-hover' : 'hide-hover'}`} >
                 View Project
             </div>

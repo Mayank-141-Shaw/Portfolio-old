@@ -13,6 +13,9 @@ import ProjectBox from '../components/ProjectBox/ProjectBox'
 import chillImg from '../assets/images/chill.jpg'
 
 
+import chillImg from '../assets/images/chill.jpg'
+
+
 function Home() {
 
   
@@ -150,11 +153,10 @@ function Home() {
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
                 <ProjectBox img={chillImg}/>
               </Col>
-              
-              
             </Row>
           </Container>
         </div>
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#0099ff55" fillOpacity="1" d="M0,320L34.3,314.7C68.6,309,137,299,206,272C274.3,245,343,203,411,181.3C480,160,549,160,617,176C685.7,192,754,224,823,224C891.4,224,960,192,1029,192C1097.1,192,1166,224,1234,234.7C1302.9,245,1371,235,1406,229.3L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
           </path>
