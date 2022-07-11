@@ -3,6 +3,11 @@
     display: flex;
 }
 
+.project-card:hover{
+    border: 5px solid black;
+    padding: 5px;
+}
+
 .show-hover{
     display: flex;
     cursor: pointer;
@@ -49,7 +54,8 @@
     text-align: center;
     margin: auto;
     object-fit: contain;
-    
+    color: black;
+    font-weight: 600;
     background-color: aqua;
     padding: 10px;
 }

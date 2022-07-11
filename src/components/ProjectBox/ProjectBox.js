@@ -12,7 +12,12 @@ function ProjectBox(props) {
 
   return (
     <>
-        <div className='project-card' style={{aspectRatio:'1', backgroundColor:props.color}}
+        <div className='project-card' style={{
+            aspectRatio:'1', 
+            backgroundImage:`url(${props.img})`,
+            backgroundSize:'cover',
+            backgroundPosition:'center'
+        }}
                 onMouseEnter={toggleHoverViewButton} onMouseLeave={toggleHoverViewButton}>
             <div className={`hover-round ${toggleViewProjectBtn ? 'show-hover' : 'hide-hover'}`} >
                 View Project
