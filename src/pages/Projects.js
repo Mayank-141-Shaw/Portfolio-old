@@ -6,22 +6,30 @@ import './css/Projects.css'
 import bigImg from '../assets/images/chill.jpg'
 import ProjectDetailBox from '../components/ProjectDetailBox/ProjectDetailBox'
 
+import foodImg from '../assets/images/projects/gamba-food.png'
+import flightImg from '../assets/images/projects/flight-landing.png'
+
 const data = [
   {
     dir: "right",
-    img: bigImg,
-    title: "Hello World",
-    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-    desc: "theis is the description of the body of the project",
-    link: 'https://github.com/Mayank-141-Shaw/Portfolio'
+    img: foodImg,
+    title: "Gamba Restaurant",
+    badges: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'],
+    desc: "A sample for a demo website for an African Restaurant The Gamba Restaurant\n "+ 
+          "It worked out as a sample pet project for practising but turned out to be pretty"+
+          "good, and liked by many of my associates and friends.",
+    link: 'https://github.com/Mayank-141-Shaw/Gamba-Restaurant-Website'
   },
   {
     dir: "left",
-    img: bigImg,
-    title: "Hello World",
-    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-    desc: "theis is the description of the body of the project",
-    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js'
+    img: flightImg,
+    title: "The GEM Logistics",
+    badges: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'],
+    desc: "A website design for sample of a airplane and logistics company The GEM\n"+
+          "Another mini project that I worked on for improving my skills and understanding"+
+          " the base of the front of the website. This provides a full UI of the logistics "+
+          "company and how it makes it efficient for it to attract clients and trust.",
+    link: 'https://github.com/Mayank-141-Shaw/The-Gem-Flight-Website'
   },
   {
     dir: "right",
