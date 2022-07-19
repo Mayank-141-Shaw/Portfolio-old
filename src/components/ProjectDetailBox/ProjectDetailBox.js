@@ -27,7 +27,7 @@ function ProjectDetailBox(props) {
     }
 
     return (
-    <Row className='my-5 align-items-center'>
+    <Row className='align-items-center' style={{margin:'5rem auto'}}>
         {
             props.info.dir == 'left' ? 
             <>
