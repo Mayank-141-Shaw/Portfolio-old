@@ -8,6 +8,7 @@ import ProjectDetailBox from '../components/ProjectDetailBox/ProjectDetailBox'
 
 import foodImg from '../assets/images/projects/gamba-food.png'
 import flightImg from '../assets/images/projects/flight-landing.png'
+import trackerImg from '../assets/images/projects/tracker-app.png'
 
 const data = [
   {
@@ -35,11 +36,14 @@ const data = [
   },
   {
     dir: "right",
-    img: bigImg,
-    title: "Hello World",
-    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-    desc: "theis is the description of the body of the project",
-    link: 'https://github.com/Mayank-141-Shaw/Portfolio',
+    img: trackerImg,
+    title: "Wildfire Tracker",
+    badges: ['HTML', 'CSS', 'ReactJS', 'Google API', 'SQL', 'JavaScript', 'NASA API'],
+    desc: "This is a wildfire tracker created using react js. It was created by using data"+
+          " from the NASA Api, which nasa provides openly to other users for operations on."+
+          " Then ith the help of Google API, we created a google maps canvas that would paint the"+
+          " coordinates on the map and show info about each one of the as provided.",
+    link: 'https://github.com/Mayank-141-Shaw/Wildfire-Tracker',
     live: 'none'
   },
   {
