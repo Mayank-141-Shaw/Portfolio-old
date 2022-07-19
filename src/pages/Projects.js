@@ -18,7 +18,8 @@ const data = [
     desc: "A sample for a demo website for an African Restaurant The Gamba Restaurant\n "+ 
           "It worked out as a sample pet project for practising but turned out to be pretty"+
           "good, and liked by many of my associates and friends.",
-    link: 'https://github.com/Mayank-141-Shaw/Gamba-Restaurant-Website'
+    link: 'https://github.com/Mayank-141-Shaw/Gamba-Restaurant-Website',
+    live: 'https://mayank-141-shaw.github.io/Gamba-Restaurant-Website/'
   },
   {
     dir: "left",
@@ -29,7 +30,8 @@ const data = [
           "Another mini project that I worked on for improving my skills and understanding"+
           " the base of the front of the website. This provides a full UI of the logistics "+
           "company and how it makes it efficient for it to attract clients and trust.",
-    link: 'https://github.com/Mayank-141-Shaw/The-Gem-Flight-Website'
+    link: 'https://github.com/Mayank-141-Shaw/The-Gem-Flight-Website',
+    live: 'https://mayank-141-shaw.github.io/The-Gem-Flight-Website'
   },
   {
     dir: "right",
@@ -37,7 +39,8 @@ const data = [
     title: "Hello World",
     badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
     desc: "theis is the description of the body of the project",
-    link: 'https://github.com/Mayank-141-Shaw/Portfolio'
+    link: 'https://github.com/Mayank-141-Shaw/Portfolio',
+    live: 'none'
   },
   {
     dir: "left",
@@ -45,7 +48,8 @@ const data = [
     title: "Hello World",
     badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
     desc: "theis is the description of the body of the project",
-    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js'
+    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js',
+    live: 'none'
   },
   {
     dir: "right",
@@ -53,7 +57,8 @@ const data = [
     title: "Hello World",
     badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
     desc: "theis is the description of the body of the project",
-    link: 'https://github.com/Mayank-141-Shaw/Portfolio'
+    link: 'https://github.com/Mayank-141-Shaw/Portfolio',
+    live: 'none'
   },
   {
     dir: "left",
@@ -61,7 +66,8 @@ const data = [
     title: "Hello World",
     badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
     desc: "theis is the description of the body of the project",
-    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js'
+    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js',
+    live: 'none'
   },
   {
     dir: "right",
@@ -69,7 +75,8 @@ const data = [
     title: "Hello World",
     badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
     desc: "theis is the description of the body of the project",
-    link: 'https://github.com/Mayank-141-Shaw/Portfolio'
+    link: 'https://github.com/Mayank-141-Shaw/Portfolio',
+    live: 'none'
   },
   {
     dir: "left",
@@ -77,7 +84,8 @@ const data = [
     title: "Hello World",
     badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
     desc: "theis is the description of the body of the project",
-    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js'
+    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js',
+    live: 'none'
   },
 ]
 
