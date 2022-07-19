@@ -9,6 +9,7 @@ import ProjectDetailBox from '../components/ProjectDetailBox/ProjectDetailBox'
 import foodImg from '../assets/images/projects/gamba-food.png'
 import flightImg from '../assets/images/projects/flight-landing.png'
 import trackerImg from '../assets/images/projects/tracker-app.png'
+import galleryImg from '../assets/images/projects/gallery.jpg'
 
 const data = [
   {
@@ -48,11 +49,13 @@ const data = [
   },
   {
     dir: "left",
-    img: bigImg,
-    title: "Hello World",
-    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-    desc: "theis is the description of the body of the project",
-    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js',
+    img: galleryImg,
+    title: "Fireshow Gallery",
+    badges: ['HTML', 'CSS', 'ReactJS', 'Firebase', 'JavaScript'],
+    desc: "This is a gallery application created using ReactJS and Firebase. Its basic function is to et users"+
+          " to upload any pictures they want to save in their account and the saved pictures "+
+          "will be shown in the gallery in a ordered fashion, like seen in the image. A very good, small but ambitious project.",
+    link: 'https://github.com/Mayank-141-Shaw/Fireshow-Gallery',
     live: 'none'
   },
   {
