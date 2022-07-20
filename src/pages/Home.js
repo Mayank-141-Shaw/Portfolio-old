@@ -13,6 +13,8 @@ import ProjectBox from '../components/ProjectBox/ProjectBox'
 import chillImg from '../assets/images/chill.jpg'
 import gambaImg from '../assets/images/projects/gamba-food.png'
 import flightImg from '../assets/images/projects/flight-landing.png'
+import wildfireImg from '../assets/images/projects/tracker-app.png'
+import galleryImg from '../assets/images/projects/gallery.jpg'
 
 
 function Home() {
@@ -135,10 +137,10 @@ function Home() {
                 <ProjectBox img={flightImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chillImg}/>
+                <ProjectBox img={wildfireImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chillImg}/>
+                <ProjectBox img={galleryImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
                 <ProjectBox img={chillImg}/>
