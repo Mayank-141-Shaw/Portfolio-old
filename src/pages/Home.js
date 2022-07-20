@@ -11,6 +11,8 @@ import './css/Home.css'
 import ProjectBox from '../components/ProjectBox/ProjectBox'
 
 import chillImg from '../assets/images/chill.jpg'
+import gambaImg from '../assets/images/projects/gamba-food.png'
+import flightImg from '../assets/images/projects/flight-landing.png'
 
 
 function Home() {
@@ -127,10 +129,10 @@ function Home() {
 
             <Row className='justify-content-center'>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chillImg}/>
+                <ProjectBox img={gambaImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chillImg}/>
+                <ProjectBox img={flightImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
                 <ProjectBox img={chillImg}/>
