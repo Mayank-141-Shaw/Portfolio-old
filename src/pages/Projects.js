@@ -13,6 +13,7 @@ import galleryImg from '../assets/images/projects/gallery.jpg'
 import flowerImg from '../assets/images/projects/flower.jpg'
 import studentImg from '../assets/images/projects/student.png'
 import chatbotImg from '../assets/images/projects/chat-app.png'
+import museumImg from '../assets/images/projects/museum-login.png'
 
 const data = [
   {
@@ -97,11 +98,12 @@ const data = [
   },
   {
     dir: "left",
-    img: bigImg,
-    title: "Hello World",
-    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-    desc: "theis is the description of the body of the project",
-    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js',
+    img: museumImg,
+    title: "Museum Management System",
+    badges: ['HTML', 'MySql', 'JavaScript', 'CSS', 'PHP'],
+    desc: "This is a museum management system made in PHP and sql, which is hosted over a local site and does "+
+          "all crud operations and manage events and data about items and emloyees of the entire museum, making it hassle free for admins to use.",
+    link: 'https://github.com/Mayank-141-Shaw/Museum-Manage-System',
     live: 'none'
   },
 ]
