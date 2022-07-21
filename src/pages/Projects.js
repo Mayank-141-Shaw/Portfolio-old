@@ -10,6 +10,8 @@ import foodImg from '../assets/images/projects/gamba-food.png'
 import flightImg from '../assets/images/projects/flight-landing.png'
 import trackerImg from '../assets/images/projects/tracker-app.png'
 import galleryImg from '../assets/images/projects/gallery.jpg'
+import flowerImg from '../assets/images/projects/flower.jpg'
+import studentImg from '../assets/images/projects/student.png'
 
 const data = [
   {
@@ -60,21 +62,24 @@ const data = [
   },
   {
     dir: "right",
-    img: bigImg,
-    title: "Hello World",
-    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-    desc: "theis is the description of the body of the project",
-    link: 'https://github.com/Mayank-141-Shaw/Portfolio',
+    img: flowerImg,
+    title: "Flower Classifier App",
+    badges: ['Java', 'Tensorflow', 'HTML', 'CSS', 'Firebase'],
+    desc: "This is a flower classifier app created using Tensorflow classifier model created using "+
+          "classifier model build from Firebase. It accurately predicts among 5 types of flowers defined "+
+          "in its model and returns the name with accuracy percentage",
+    link: 'https://github.com/Mayank-141-Shaw/Flower-Classifier',
     live: 'none'
   },
   {
     dir: "left",
-    img: bigImg,
-    title: "Hello World",
-    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-    desc: "theis is the description of the body of the project",
-    link: 'https://github.com/joeldesante/Harvey/blob/master/src/lib/courseChannels.js',
-    live: 'none'
+    img: studentImg,
+    title: "Student Management App",
+    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Bootstrap', 'Redux'],
+    desc: "This is a student management basic app, created using ReactJS which allows to keep tabs/data "
+          + "on students and do basic crud operations using React Redux",
+    link: 'https://github.com/Mayank-141-Shaw/student-react-app',
+    live: 'https://mayank-141-shaw.github.io/student-react-app/'
   },
   {
     dir: "right",
