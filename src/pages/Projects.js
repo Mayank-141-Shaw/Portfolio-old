@@ -14,6 +14,7 @@ import flowerImg from '../assets/images/projects/flower.jpg'
 import studentImg from '../assets/images/projects/student.png'
 import chatbotImg from '../assets/images/projects/chat-app.png'
 import museumImg from '../assets/images/projects/museum-login.png'
+import museumWebImg from '../assets/images/projects/museum-web.png'
 
 const data = [
   {
@@ -106,6 +107,16 @@ const data = [
     link: 'https://github.com/Mayank-141-Shaw/Museum-Manage-System',
     live: 'none'
   },
+  {
+    dir: "right",
+    img: museumWebImg,
+    title: "Museum Website",
+    badges: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'],
+    desc: "This is a sample website for museum which demonstrates all of its events and features in a very good"+
+          " fashion. Made with bootstrap and javascript its a very dynamic website and vibrant.",
+    link: 'https://github.com/Mayank-141-Shaw/Museum-Host',
+    live: 'https://mayank-141-shaw.github.io/Museum-Host/'
+  },
 ]
 
 
@@ -137,6 +148,7 @@ function Projects() {
           <ProjectDetailBox info={data[5]} />
           <ProjectDetailBox info={data[6]} />
           <ProjectDetailBox info={data[7]} />
+          <ProjectDetailBox info={data[8]} />
 
         </Container>
 
