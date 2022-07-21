@@ -12,6 +12,7 @@ import trackerImg from '../assets/images/projects/tracker-app.png'
 import galleryImg from '../assets/images/projects/gallery.jpg'
 import flowerImg from '../assets/images/projects/flower.jpg'
 import studentImg from '../assets/images/projects/student.png'
+import chatbotImg from '../assets/images/projects/chat-app.png'
 
 const data = [
   {
@@ -83,11 +84,15 @@ const data = [
   },
   {
     dir: "right",
-    img: bigImg,
-    title: "Hello World",
-    badges: ['HTML', 'Sql', 'JavaScript', 'CSS', 'Spring Boot', 'Three Js', 'Bootstrap', 'Tensorflow', 'Python', 'Ionic'],
-    desc: "theis is the description of the body of the project",
-    link: 'https://github.com/Mayank-141-Shaw/Portfolio',
+    img: chatbotImg,
+    title: "AI Chatbot",
+    badges: ['HTML', 'JavaScript', 'CSS', 'React', 'Python', 'Tensorflow', 'Flask', 'Axios', 'Sklearn', 'ML'],
+    desc: "This is a chatbot created using microservice architecture. It has two services (react-front, python-back)"+
+          " that interact with each other. The user uses the react app, which gets its input and sends it as a get request"+
+          " to the flask service, that has a model that parses the message and returns a appropriate response"+
+          " from the table of responses that it has stored, in a csv file. The response is then printed to the user"+
+          " giving it the interaction of chatting with a bot.",
+    link: 'https://github.com/Mayank-141-Shaw/AI-Chat-App',
     live: 'none'
   },
   {
