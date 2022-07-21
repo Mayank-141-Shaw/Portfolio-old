@@ -15,6 +15,7 @@ function SkillContainer() {
             <a className="skill-shortcut" href="#fend" >Front End</a>
             <a className="skill-shortcut" href="#bend" >Back End</a>
             <a className="skill-shortcut" href="#cs" >CS</a>
+            <a className="skill-shortcut" href="#dbs" >Databases</a>
             <a className="skill-shortcut" href="#vsctrl" >Version Control</a>
             <a className="skill-shortcut" href="#tools" >Tools</a>
             <a className="skill-shortcut" href="#xr" >XR</a>
@@ -46,6 +47,17 @@ function SkillContainer() {
             <h2 id="cs" className="pt-5">CS</h2>
 
             { SkillData.cs.map(
+                skill => {
+                    return (
+                        <Col sm={4} md={2} xs={6} lg={2}>
+                            <SkillTab icon={skill.icon} title={skill.title} time={skill.time} score={skill.score} text={skill.text}/>
+                        </Col>
+                );}
+            ) }
+
+            <h2 id="dbs" className="pt-5">Databases</h2>
+
+            { SkillData.dbs.map(
                 skill => {
                     return (
                         <Col sm={4} md={2} xs={6} lg={2}>
