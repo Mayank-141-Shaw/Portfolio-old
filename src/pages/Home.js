@@ -15,7 +15,10 @@ import gambaImg from '../assets/images/projects/gamba-food.png'
 import flightImg from '../assets/images/projects/flight-landing.png'
 import wildfireImg from '../assets/images/projects/tracker-app.png'
 import galleryImg from '../assets/images/projects/gallery.jpg'
-
+import museumWebImg from '../assets/images/projects/museum-web.png'
+import studentImg from '../assets/images/projects/student.png'
+import museumLoginImg from '../assets/images/projects/museum-login.png'
+import chatImg from '../assets/images/projects/chat-app.png'
 
 function Home() {
 
@@ -143,16 +146,16 @@ function Home() {
                 <ProjectBox img={galleryImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chillImg}/>
+                <ProjectBox img={museumWebImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chillImg}/>
+                <ProjectBox img={studentImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chillImg}/>
+                <ProjectBox img={museumLoginImg}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chillImg}/>
+                <ProjectBox img={chatImg}/>
               </Col>
             </Row>
           </Container>
