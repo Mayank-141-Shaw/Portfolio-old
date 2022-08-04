@@ -22,8 +22,6 @@ import chatImg from '../assets/images/projects/chat-app.png'
 
 function Home() {
 
-  
-
   const scrollDown = () => {
     let about = document.getElementById('about-tag').getBoundingClientRect();
     window.scrollTo(about.x, about.y);
