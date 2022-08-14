@@ -15,6 +15,7 @@ import chatbotImg from '../assets/images/projects/chat-app.png'
 import museumImg from '../assets/images/projects/museum-login.png'
 import museumWebImg from '../assets/images/projects/museum-web.png'
 import bookStoreImg from '../assets/images/projects/book-store-cover.png'
+import liveChatImg from '../assets/images/projects/live-chat.png'
 
 const data = [
   {
@@ -129,7 +130,7 @@ const data = [
   },
   {
     dir: "right",
-    img: museumWebImg,
+    img: liveChatImg,
     title: "React Live Chat App",
     badges: ['React JS', 'Socket.io', 'MongoDB', 'Axios', 'NodeJS'],
     desc: "This is a live chat app whre multiple users can talk to each other in real time."+
@@ -165,16 +166,6 @@ function Projects() {
               return <ProjectDetailBox info={item} />
             } )
           }
-
-          {/* <ProjectDetailBox info={data[0]} />
-          <ProjectDetailBox info={data[1]} />
-          <ProjectDetailBox info={data[2]} />
-          <ProjectDetailBox info={data[3]} />
-          <ProjectDetailBox info={data[4]} />
-          <ProjectDetailBox info={data[5]} />
-          <ProjectDetailBox info={data[6]} />
-          <ProjectDetailBox info={data[7]} />
-          <ProjectDetailBox info={data[8]} /> */}
 
         </Container>
 
