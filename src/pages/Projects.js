@@ -1,9 +1,8 @@
 import React from 'react'
-import { Badge, Col, Container, Row } from 'react-bootstrap'
+import { Badge, Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/Projects.css'
 
-import bigImg from '../assets/images/chill.jpg'
 import ProjectDetailBox from '../components/ProjectDetailBox/ProjectDetailBox'
 
 import foodImg from '../assets/images/projects/gamba-food.png'
@@ -15,6 +14,7 @@ import studentImg from '../assets/images/projects/student.png'
 import chatbotImg from '../assets/images/projects/chat-app.png'
 import museumImg from '../assets/images/projects/museum-login.png'
 import museumWebImg from '../assets/images/projects/museum-web.png'
+import bookStoreImg from '../assets/images/projects/book-store-cover.png'
 
 const data = [
   {
@@ -117,6 +117,26 @@ const data = [
     link: 'https://github.com/Mayank-141-Shaw/Museum-Host',
     live: 'https://mayank-141-shaw.github.io/Museum-Host/'
   },
+  {
+    dir: "left",
+    img: bookStoreImg,
+    title: "React Native Online Book Store",
+    badges: ['React Native', 'MongoDB', 'Web Sockets', 'Node js', 'NoSQL'],
+    desc: "This is a mobile application created using react native. It is a small online book store app for obile device"+
+          " where users can check out the various genres and read various ebooks online.",
+    link: 'https://github.com/Mayank-141-Shaw/React-Native-Book-Store-App',
+    live: 'none'
+  },
+  {
+    dir: "right",
+    img: museumWebImg,
+    title: "React Live Chat App",
+    badges: ['React JS', 'Socket.io', 'MongoDB', 'Axios', 'NodeJS'],
+    desc: "This is a live chat app whre multiple users can talk to each other in real time."+
+          " The data is updated live in mongodb and parsed / hosted live using web sockets parallel streaming",
+    link: 'https://github.com/Mayank-141-Shaw/Realtime-React-Chat-App',
+    live: 'none'
+  },
 ]
 
 
@@ -140,7 +160,13 @@ function Projects() {
             <hr style={{ display: 'block', width: '100%', backgroundColor: '#ffffff66' }} />
           </div>
 
-          <ProjectDetailBox info={data[0]} />
+          {
+            data.map( item => {
+              return <ProjectDetailBox info={item} />
+            } )
+          }
+
+          {/* <ProjectDetailBox info={data[0]} />
           <ProjectDetailBox info={data[1]} />
           <ProjectDetailBox info={data[2]} />
           <ProjectDetailBox info={data[3]} />
@@ -148,7 +174,7 @@ function Projects() {
           <ProjectDetailBox info={data[5]} />
           <ProjectDetailBox info={data[6]} />
           <ProjectDetailBox info={data[7]} />
-          <ProjectDetailBox info={data[8]} />
+          <ProjectDetailBox info={data[8]} /> */}
 
         </Container>
 
