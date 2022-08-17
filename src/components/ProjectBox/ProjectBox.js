@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './ProjectBox.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button, Image, Modal } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 function ProjectBox(props) {
 
@@ -41,6 +42,11 @@ function ProjectBox(props) {
             </Modal.Body>
 
             <Modal.Footer>
+                <Button variant="secondary">
+                    <Link to='/project' style={{textDecoration:'none', color:'white', fontWeight:'400'}}>
+                        Goto Projects
+                    </Link>
+                </Button>
                 <Button variant="secondary" onClick={handleClose}>
                     Close
                 </Button>
