@@ -132,28 +132,28 @@ function Home() {
 
             <Row className='justify-content-center'>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={gambaImg}/>
+                <ProjectBox img={gambaImg} name={'Gamba Restaurant'}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={flightImg}/>
+                <ProjectBox img={flightImg} name={'The GEM Logistics'}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={wildfireImg}/>
+                <ProjectBox img={wildfireImg} name={'Wildfire Tracker'}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={galleryImg}/>
+                <ProjectBox img={galleryImg} name={'Firestore Gallery'}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={museumWebImg}/>
+                <ProjectBox img={museumWebImg} name={'Space Museum Web'}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={bookStoreImg}/>
+                <ProjectBox img={bookStoreImg} name={'Online Book Store App'}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={museumLoginImg}/>
+                <ProjectBox img={museumLoginImg} name={'Museum Management'}/>
               </Col>
               <Col md={3} xs={6} lg={3} style={{padding:'0'}}>
-                <ProjectBox img={chatImg}/>
+                <ProjectBox img={chatImg} name={'AI Chatbot'}/>
               </Col>
             </Row>
           </Container>
