@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <MusicBox />
       <SocialSideTab />
-      <BackgroundGalaxy/>
+      <BackgroundGalaxy />
       <ResumeBtn />
       <Routes>
         <Route path='/' element={<Home />} />
