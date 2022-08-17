@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import './ProjectBox.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Image } from 'react-bootstrap'
+import { Button, Image, Modal } from 'react-bootstrap'
 
 function ProjectBox(props) {
 
     const [toggleViewProjectBtn, setViewBtn] = useState(false)
+    const [show, setShow] = useState(false)
+
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
 
     const toggleHoverViewButton = () => {
         setViewBtn(!toggleViewProjectBtn);
@@ -22,10 +26,26 @@ function ProjectBox(props) {
         }}
                 onMouseEnter={toggleHoverViewButton} onMouseLeave={toggleHoverViewButton}>
                
-            <div className={`hover-round ${toggleViewProjectBtn ? 'show-hover' : 'hide-hover'}`} >
+            <div className={`hover-round ${toggleViewProjectBtn ? 'show-hover' : 'hide-hover'}`} onClick={handleShow}>
                 View Project
             </div>
         </div>
+
+        <Modal show={show} onHide={handleClose} size={'lg'}>
+            <Modal.Header closeButton>
+                <Modal.Title>{props.name}</Modal.Title>
+            </Modal.Header>
+
+            <Modal.Body>
+                <Image src={props.img} width={'100%'}/>
+            </Modal.Body>
+
+            <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Close
+                </Button>
+            </Modal.Footer>
+        </Modal>
     </>
   )
 }
