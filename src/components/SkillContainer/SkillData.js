@@ -41,6 +41,11 @@ import graphqlIcon from '../../assets/images/icons/graphql.png'
 import jiraIcon from '../../assets/images/icons/jira.png'
 import mixamoIcon from '../../assets/images/icons/mixamo.png'
 import nginxIcon from '../../assets/images/icons/nginx.png'
+import eclipseIcon from '../../assets/images/icons/eclipse.png'
+import illusIcon from '../../assets/images/icons/illustrator.png'
+import intellijIcon from '../../assets/images/icons/intellij.png'
+import photoIcon from '../../assets/images/icons/photoshop.png'
+import dynamoIcon from '../../assets/images/icons/dynamo.png'
 
 
 
@@ -292,6 +297,13 @@ export const SkillData = {
             text:"Amazon Elastic Compute Cloud is a part of Amazon.com's cloud-computing platform, Amazon Web Services, that allows users to rent virtual computers on which to run their own computer applications. "
         },
         {
+            icon: dynamoIcon, 
+            title:"AWS DynamoDB", 
+            score: 60, 
+            time: 1, 
+            text:"Amazon DynamoDB is a fully managed proprietary NoSQL database service that supports key–value and document data structures and is offered by Amazon.com as part of the Amazon Web Services portfolio. DynamoDB exposes a similar data model to and derives its name from Dynamo, but has a different underlying implementation. "
+        },
+        {
             icon: graphqlIcon, 
             title:"GraphQL", 
             score: 50, 
@@ -344,6 +356,20 @@ export const SkillData = {
             time:2, 
             text:"Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Worldwide Developers Conference as a Mac OS X game engine. The engine has since been gradually extended to support a variety of desktop, mobile, console and virtual reality platforms."
         },
+        {
+            icon:illusIcon, 
+            title:"Adobe Illustrator", 
+            score:50, 
+            time:1, 
+            text:"Adobe Illustrator is a vector graphics editor and design program developed and marketed by Adobe Inc. Originally designed for the Apple Macintosh, development of Adobe Illustrator began in 1985. Along with Creative Cloud, Illustrator CC was released."
+        },
+        {
+            icon:photoIcon, 
+            title:"Photoshop", 
+            score:60, 
+            time:2, 
+            text:"Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1988 by Thomas and John Knoll. Since then, the software has become the industry standard not only in raster graphics editing, but in digital art as a whole."
+        },
     ],
 
 
@@ -368,7 +394,21 @@ export const SkillData = {
             score:80, 
             time:3, 
             text:"Microsoft Visual Studio is an integrated development environment from Microsoft. It is used to develop computer programs, as well as websites, web apps, web services and mobile apps."
-        }
+        },
+        {
+            icon:eclipseIcon, 
+            title:"Eclipse IDE", 
+            score:80, 
+            time:3, 
+            text:"Eclipse is an integrated development environment used in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment. It is the second-most-popular IDE for Java development, and, until 2016, was the most popular."
+        },
+        {
+            icon:intellijIcon, 
+            title:"IntelliJ IDE", 
+            score:80, 
+            time:1, 
+            text:"IntelliJ IDEA is an integrated development environment written in Java for developing computer software written in Java, Kotlin, Groovy, and other JAR based languages. It is developed by JetBrains, and is available as an Apache 2 Licensed community edition, and in a proprietary commercial edition."
+        },
     ]
 
 }
