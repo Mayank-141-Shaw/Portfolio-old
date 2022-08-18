@@ -30,7 +30,17 @@ import springIcon from '../../assets/images/icons/spring.png'
 import typeIcon from '../../assets/images/icons/typescript.png'
 import unityIcon from '../../assets/images/icons/unity.png'
 import visIcon from '../../assets/images/icons/vis.png'
-
+import tomcatIcon from '../../assets/images/icons/apache-tomcat.png'
+import awsIcon from '../../assets/images/icons/aws.png'
+import lambdaIcon from '../../assets/images/icons/aws-lambda.png'
+import awsS3Icon from '../../assets/images/icons/aws-s3.png'
+import awsEc2Icon from '../../assets/images/icons/aws-ec2.png'
+import gitlabIcon from '../../assets/images/icons/gitlab.png'
+import googleApiIcon from '../../assets/images/icons/google-api.png'
+import graphqlIcon from '../../assets/images/icons/graphql.png'
+import jiraIcon from '../../assets/images/icons/jira.png'
+import mixamoIcon from '../../assets/images/icons/mixamo.png'
+import nginxIcon from '../../assets/images/icons/nginx.png'
 
 
 
@@ -105,11 +115,39 @@ export const SkillData = {
 
     bend : [
         {
+            icon: tomcatIcon, 
+            title:"Apache Tomcat", 
+            score: 70, 
+            time: 2, 
+            text:"pache Tomcat is a free and open-source implementation of the Jakarta Servlet, Jakarta Expression Language, and WebSocket technologies. Tomcat provides a pure Java HTTP web server environment in which Java code can run."
+        },
+        {
+            icon:awsIcon, 
+            title:"AWS", 
+            score: 60, 
+            time: 1, 
+            text:"Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis. These cloud computing web services provide distributed computing processing capacity and software tools via AWS server farms."
+        },
+        {
+            icon: lambdaIcon, 
+            title:"AWS Lambda", 
+            score: 70, 
+            time: 1, 
+            text:"AWS Lambda is an event-driven, serverless computing platform provided by Amazon as a part of Amazon Web Services. It is a computing service that runs code in response to events and automatically manages the computing resources required by that code. It was introduced in November 2014."
+        },
+        {
             icon:nodeIcon, 
             title:"Node JS", 
             score:90, 
             time:2, 
             text:"Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser, which was designed to build scalable network applications."
+        },
+        {
+            icon:nginxIcon, 
+            title:"NGINX", 
+            score:60, 
+            time:1, 
+            text:"Nginx, stylized as NGIИX, is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. The software was created by Igor Sysoev and publicly released in 2004. Nginx is free and open-source software, released under the terms of the 2-clause BSD license."
         },
         {
             icon:expressIcon, 
@@ -124,6 +162,13 @@ export const SkillData = {
             score:60, 
             time:1, 
             text:"Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions."
+        },
+        {
+            icon:googleApiIcon, 
+            title:"Google API", 
+            score: 60, 
+            time: 1, 
+            text:"Google Cloud Platform, offered by Google, is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search, Gmail, Google Drive, and YouTube."
         },
         {
             icon:hibernateIcon, 
@@ -194,9 +239,16 @@ export const SkillData = {
         {
             icon:jenkinsIcon, 
             title:"Jenkins", 
-            score:35, 
+            score:45, 
             time:1, 
             text:"Jenkins is an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery. It is a server-based system that runs in servlet containers such as Apache Tomcat."
+        },
+        {
+            icon:jiraIcon, 
+            title:"Jira", 
+            score: 40, 
+            time:1, 
+            text:"Jira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management."
         },
     ],
 
@@ -225,6 +277,27 @@ export const SkillData = {
     ],
 
     dbs : [
+        {
+            icon: awsS3Icon, 
+            title:"AWS S3", 
+            score: 70, 
+            time: 1, 
+            text:"Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services that provides object storage through a web service interface. Amazon S3 uses the same scalable storage infrastructure that Amazon.com uses to run its e-commerce network."
+        },
+        {
+            icon: awsEc2Icon, 
+            title:"AWS EC2", 
+            score: 70, 
+            time: 1, 
+            text:"Amazon Elastic Compute Cloud is a part of Amazon.com's cloud-computing platform, Amazon Web Services, that allows users to rent virtual computers on which to run their own computer applications. "
+        },
+        {
+            icon: graphqlIcon, 
+            title:"GraphQL", 
+            score: 50, 
+            time: 1, 
+            text:"GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data. GraphQL was developed internally by Facebook in 2012 before being publicly released in 2015."
+        },
         {
             icon:mongoIcon, 
             title:"Mongo DB", 
@@ -258,6 +331,13 @@ export const SkillData = {
             text:"Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and, formerly, video games."
         },
         {
+            icon:mixamoIcon, 
+            title:"Mixamo", 
+            score:80, 
+            time:2, 
+            text:"Mixamo is a 3D computer graphics technology company. Based in San Francisco, the company develops and sells web-based services for 3D character animation. Mixamo's technologies use machine learning methods to automate the steps of the character animation process, including 3D modeling to rigging and 3D animation."
+        },
+        {
             icon:unityIcon, 
             title:"Unity 3D", 
             score:90, 
@@ -274,6 +354,13 @@ export const SkillData = {
             score:90, 
             time:2, 
             text:"Postman is an API platform for developers to design, build, test and iterate their APIs. As of April 2022, Postman reports having more than 20 million registered users and 75,000 open APIs, which it says constitutes the world's largest public API hub."
+        },
+        {
+            icon:gitlabIcon, 
+            title:"Gitlab", 
+            score:50, 
+            time:1, 
+            text:"GitLab Inc. is an open-core company that provides GitLab, a DevOps software package that combines the ability to develop, secure, and operate software in a single application. The open source software project was created by Ukrainian developer Dmitriy Zaporozhets and Dutch developer Sytse Sijbrandij."
         },
         {
             icon:visIcon, 
