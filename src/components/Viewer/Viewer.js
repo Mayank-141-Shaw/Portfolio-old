@@ -19,7 +19,7 @@ function Viewer(props) {
 
         <Modal show={show} onHide={handleClose} size={'lg'}>
             <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+                <Modal.Title>{props.name}</Modal.Title>
             </Modal.Header>
 
             <Modal.Body>
@@ -29,9 +29,6 @@ function Viewer(props) {
             <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
                     Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
                 </Button>
             </Modal.Footer>
         </Modal>
