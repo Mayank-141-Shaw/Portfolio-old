@@ -1,13 +1,14 @@
 import React from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import chillImage from '../assets/images/chill.jpg'
-import cloudyImage from '../assets/images/cloudsy.jpg'
-import sunsetImage from '../assets/images/sunset.jpg'
-import pastelImage from '../assets/images/pastel.jpg'
-import colorImage from '../assets/images/color.jpg'
-import japanImage from '../assets/images/japan.jpg'
-import jarImage from '../assets/images/jar.jpg'
+
+import vrImage from '../assets/images/gallery/VR pixelguy.png'
+import indoorImage from '../assets/images/gallery/Modern_Indoor.png'
+import parkImage from '../assets/images/gallery/LowPoly Dark park Bench.png'
+import desertImage from '../assets/images/gallery/SpaceDesert.png'
+import gardenImage from '../assets/images/gallery/HighQ Garden.png'
+
+
 import Viewer from '../components/Viewer/Viewer'
 
 
@@ -17,17 +18,15 @@ function Gallery() {
       <Container>
         <Row className={'no-gutters'}>
           <Col md={4} lg={4} xs={12}>
-            <Viewer src={chillImage}/>
-            <Viewer src={pastelImage}/>
-            <Viewer src={jarImage}/>
+            <Viewer src={vrImage} name='VR headgear model'/>
+            <Viewer src={parkImage} name='Dark Park Bench'/>
           </Col>
           <Col md={4} lg={4} xs={12}>
-            <Viewer src={cloudyImage}/>
-            <Viewer src={colorImage}/>
+            <Viewer src={gardenImage} name='Lighty Garden'/>
+            <Viewer src={indoorImage} name='Moden Indoor'/>
           </Col>
           <Col md={4} lg={4} xs={12}>
-            <Viewer src={sunsetImage}/>
-            <Viewer src={japanImage}/>
+            <Viewer src={desertImage} name='Space Desert'/>
           </Col>
         </Row>
       </Container>
