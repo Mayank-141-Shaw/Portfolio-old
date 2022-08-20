@@ -16,6 +16,7 @@
     "react-scripts": "5.0.1",
     "react-typed-v2": "^1.0.8",
     "three": "^0.142.0",
+    "vite-plugin-string": "^1.1.2",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
