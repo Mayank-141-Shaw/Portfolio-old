@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import { Color, WebGL1Renderer } from 'three'
 
+import vertexShader from '../../shaders/vertex.glsl'
+
 import earthMap from '../../assets/images/earth.jpg'
 
 export default function BackgroundGalaxy(props) {
@@ -13,8 +15,10 @@ export default function BackgroundGalaxy(props) {
     const sphereGeometry = new THREE.SphereGeometry(5, 50, 50);
    
     // material
-    const material = new THREE.MeshBasicMaterial({
-      map: new THREE.TextureLoader().load(earthMap)
+    const material = new THREE.ShaderMaterial({
+      map: new THREE.TextureLoader().load(earthMap),
+      vertexShader: vertexShader,
+      // fragmentShader: '',
     });
     
     // mesh 
@@ -31,8 +35,15 @@ export default function BackgroundGalaxy(props) {
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight , 0.1, 100)
 
     // renderer
-    const renderer = new WebGL1Renderer()
+
+    /**
+     * anti alias gets rid of the sharp edges and makes mesh smooth
+     */
+    const renderer = new WebGL1Renderer({
+      antialias: true
+    })
     renderer.setSize(window.innerWidth, window.innerHeight)
+    renderer.setPixelRatio(window.devicePixelRatio)
 
     scene.add(sphereMesh, light)
     camera.position.z = 10;
