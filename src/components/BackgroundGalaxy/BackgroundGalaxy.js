@@ -6,14 +6,20 @@ import earthMap from '../../assets/images/earth.jpg'
 
 
 const vertexShader = `
+  varying vec2 vertexUV;
+
   void main(){
+    vertexUV = uv;
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
   }
 `;
 
 const fragmentShader = `
+  uniform sampler2D globeTexture;
+  varying vec2 vertexUV;
+
   void main(){
-    gl_FragColor = vec4(1, 0, 0, 1);
+    gl_FragColor = texture2D(globeTexture, vertexUV);
   }
 `
 
@@ -27,9 +33,13 @@ export default function BackgroundGalaxy(props) {
    
     // material
     const material = new THREE.ShaderMaterial({
-      map: new THREE.TextureLoader().load(earthMap),
       vertexShader: vertexShader,
       fragmentShader: fragmentShader,
+      uniforms:{
+        globeTexture:{
+          value: new THREE.TextureLoader().load(earthMap)
+        }
+      }
     });
     
     // mesh 
