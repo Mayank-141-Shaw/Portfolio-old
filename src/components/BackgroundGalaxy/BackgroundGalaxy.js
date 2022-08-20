@@ -3,11 +3,13 @@ import * as THREE from 'three'
 import { Color, WebGL1Renderer } from 'three'
 
 import vertexShader from '../../shaders/vertex.glsl'
+import fragmentShader from '../../shaders/fragment.glsl'
 
 import earthMap from '../../assets/images/earth.jpg'
 
 export default function BackgroundGalaxy(props) {
 
+    console.log(vertexShader)
 
     const mountRef = useRef(null)
 
@@ -18,7 +20,7 @@ export default function BackgroundGalaxy(props) {
     const material = new THREE.ShaderMaterial({
       map: new THREE.TextureLoader().load(earthMap),
       vertexShader: vertexShader,
-      // fragmentShader: '',
+      fragmentShader: fragmentShader,
     });
     
     // mesh 
