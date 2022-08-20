@@ -2,14 +2,23 @@ import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import { Color, WebGL1Renderer } from 'three'
 
-import vertexShader from '../../shaders/vertex.glsl'
-import fragmentShader from '../../shaders/fragment.glsl'
-
 import earthMap from '../../assets/images/earth.jpg'
 
-export default function BackgroundGalaxy(props) {
 
-    console.log(vertexShader)
+const vertexShader = `
+  void main(){
+    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  }
+`;
+
+const fragmentShader = `
+  void main(){
+    gl_FragColor = vec4(1, 0, 0, 1);
+  }
+`
+
+
+export default function BackgroundGalaxy(props) {
 
     const mountRef = useRef(null)
 
