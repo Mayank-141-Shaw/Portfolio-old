@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import { Color, WebGL1Renderer } from 'three'
 
-import * as leatherNormal from '../../assets/images/leather.png'
+import earthMap from '../../assets/images/earth.jpg'
 
 export default function BackgroundGalaxy(props) {
 
@@ -14,7 +14,7 @@ export default function BackgroundGalaxy(props) {
    
     // material
     const material = new THREE.MeshBasicMaterial({
-      color: 0xff0000,
+      map: new THREE.TextureLoader().load(earthMap)
     });
     
     // mesh 
@@ -35,7 +35,8 @@ export default function BackgroundGalaxy(props) {
     renderer.setSize(window.innerWidth, window.innerHeight)
 
     scene.add(sphereMesh, light)
-    camera.position.z = 50;
+    camera.position.z = 10;
+    camera.position.y = 0;
 
     function animate(){
         requestAnimationFrame( animate )
