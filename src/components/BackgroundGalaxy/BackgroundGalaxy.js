@@ -11,7 +11,7 @@ const vertexShader = `
 
   void main(){
     vertexUV = uv;
-    vertexNormal = normal;
+    vertexNormal = normalize(normalMatrix * normal);
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
   }
 `;
@@ -24,7 +24,7 @@ const fragmentShader = `
   varying vec3 vertexNormal;
 
   void main(){
-    float intensity = 0.3 - dot(vertexNormal, vec3(0,0,0));
+    float intensity = 1.05 - dot(vertexNormal, vec3(0,0,1));
     vec3 atmosphere = vec3(0.3, 0.6, 1) * pow(intensity, 1.01);
 
     gl_FragColor = vec4( atmosphere + texture2D(globeTexture, vertexUV).xyz, 1.0);
@@ -35,7 +35,7 @@ const atmosVertexShader = `
   varying vec3 vertexNormal;
 
   void main(){
-    vertexNormal = normal;
+    vertexNormal = normalize(normalMatrix * normal);
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
   }
 `;
@@ -44,7 +44,7 @@ const atmosFragmentShader = `
   varying vec3 vertexNormal;
 
   void main(){
-    float intensity = pow(0.5 - dot(vertexNormal, vec3(0,0,1.0)), 2.0);
+    float intensity = pow(0.65 - dot(vertexNormal, vec3(0,0,1.0)), 2.0);
 
     gl_FragColor = vec4(0.3, 0.7, 1.0, 1.0) * intensity;
   }
@@ -79,7 +79,7 @@ export default function BackgroundGalaxy(props) {
       })
     )
 
-    atmosphereMesh.scale.set(1.4, 1.4, 1.4);
+    atmosphereMesh.scale.set(1.3, 1.3, 1.3);
 
     // light
     const light = new THREE.DirectionalLight(0xffffff);
