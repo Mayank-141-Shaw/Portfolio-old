@@ -53,6 +53,14 @@ const atmosFragmentShader = `
 export default function BackgroundGalaxy(props) {
 
     const mountRef = useRef(null)
+  
+    // for mouse movements
+    const mouse = {
+      x:undefined,
+      y:undefined
+    }
+
+    const group = new THREE.Group()
     
     // earth mesh 
     const earthMesh = new THREE.Mesh(
@@ -81,6 +89,9 @@ export default function BackgroundGalaxy(props) {
 
     atmosphereMesh.scale.set(1.3, 1.3, 1.3);
 
+
+    
+
     // light
     const light = new THREE.DirectionalLight(0xffffff);
     
@@ -102,7 +113,10 @@ export default function BackgroundGalaxy(props) {
     renderer.setSize(window.innerWidth, window.innerHeight)
     renderer.setPixelRatio(window.devicePixelRatio)
 
-    scene.add(earthMesh, atmosphereMesh)
+    // adding earth to the group
+    group.add(earthMesh)
+
+    scene.add(group, atmosphereMesh)
 
     camera.position.z = 10;
     camera.position.y = 0;
@@ -111,14 +125,18 @@ export default function BackgroundGalaxy(props) {
         requestAnimationFrame( animate )
         // earthMesh.rotation.x += 0.005
         earthMesh.rotation.y += 0.005
+        group.rotation.y = mouse.x * 0.5;
 
         renderer.render(scene, camera);
     }
 
     useEffect( () => {
         animate();
+        window.addEventListener('mousemove', (e) => {
+          mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+          mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+        })
         return () => mountRef.current.appendChild( renderer.domElement );
-       
     });
 
     
