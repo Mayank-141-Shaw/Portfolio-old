@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { Color, WebGL1Renderer } from 'three'
 
 import earthMap from '../../assets/images/earth.jpg'
+import gsap from 'gsap'
 
 
 const vertexShader = `
@@ -124,8 +125,13 @@ export default function BackgroundGalaxy(props) {
     function animate(){
         requestAnimationFrame( animate )
         // earthMesh.rotation.x += 0.005
-        earthMesh.rotation.y += 0.005
-        group.rotation.y = mouse.x * 0.5;
+        earthMesh.rotation.y += 0.001
+        
+        gsap.to(group.rotation, {
+          x: -mouse.y * 0.3,
+          y: mouse.x * 0.5,
+          duration: 2
+        })
 
         renderer.render(scene, camera);
     }
