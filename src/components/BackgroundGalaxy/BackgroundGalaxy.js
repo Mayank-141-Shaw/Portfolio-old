@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three'
-import { Color, WebGL1Renderer } from 'three'
+import { Color, Float32BufferAttribute, WebGL1Renderer } from 'three'
 
 import earthMap from '../../assets/images/earth.jpg'
 import gsap from 'gsap'
@@ -88,10 +88,32 @@ export default function BackgroundGalaxy(props) {
       })
     )
 
-    atmosphereMesh.scale.set(1.3, 1.3, 1.3);
+    atmosphereMesh.scale.set(1.25, 1.25, 1.25);
 
 
-    
+    // making the stars
+    const starsGeometry = new THREE.BufferGeometry()
+    const starMaterial = new THREE.PointsMaterial({
+      color: 0xffffff,
+      size: 0.1
+    })
+
+    const starVertices = []
+    for(let i=0; i<10000; i++){
+      const x = (Math.random() - 0.5) * 200;
+      const y = (Math.random() - 0.5) * 200;
+      const z = -Math.random() * 1000;
+      starVertices.push(x,y,z)
+    }
+
+    starsGeometry.setAttribute(
+      'position', 
+      new THREE.Float32BufferAttribute(starVertices, 3)
+    );
+
+    const stars = new THREE.Points(starsGeometry, starMaterial);
+
+
 
     // light
     const light = new THREE.DirectionalLight(0xffffff);
@@ -117,7 +139,7 @@ export default function BackgroundGalaxy(props) {
     // adding earth to the group
     group.add(earthMesh)
 
-    scene.add(group, atmosphereMesh)
+    scene.add(group, atmosphereMesh, stars)
 
     camera.position.z = 10;
     camera.position.y = 0;
