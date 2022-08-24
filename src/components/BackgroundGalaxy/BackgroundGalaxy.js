@@ -99,7 +99,7 @@ export default function BackgroundGalaxy(props) {
     })
 
     const starVertices = []
-    for(let i=0; i<10000; i++){
+    for(let i=0; i<2000; i++){
       const x = (Math.random() - 0.5) * 200;
       const y = (Math.random() - 0.5) * 200;
       const z = -Math.random() * 1000;
