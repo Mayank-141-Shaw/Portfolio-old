@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import * as THREE from 'three'
 import { Color, Float32BufferAttribute, WebGL1Renderer } from 'three'
 
@@ -54,6 +54,17 @@ const atmosFragmentShader = `
 export default function BackgroundGalaxy(props) {
 
     const mountRef = useRef(null)
+
+    const docHeight = document.body.scrollHeight;
+    const innerHeight = window.innerHeight;
+    const scrollableLength = docHeight - innerHeight;
+    const startGlobeRadius = window.innerWidth/100;
+
+    const [radius, setRadius] = useState(startGlobeRadius)
+    const [userPosY, setUserPosY] = useState(0)
+
+    
+  
   
     // for mouse movements
     const mouse = {
@@ -65,7 +76,7 @@ export default function BackgroundGalaxy(props) {
     
     // earth mesh 
     const earthMesh = new THREE.Mesh(
-      new THREE.SphereGeometry(5, 50, 50),
+      new THREE.SphereGeometry(radius, 150, 150),
       new THREE.ShaderMaterial({
         vertexShader: vertexShader,
         fragmentShader: fragmentShader,
@@ -79,7 +90,7 @@ export default function BackgroundGalaxy(props) {
     
 
     const atmosphereMesh = new THREE.Mesh(
-      new THREE.SphereGeometry(5, 50, 50),
+      new THREE.SphereGeometry(radius, 50, 50),
       new THREE.ShaderMaterial({
         vertexShader: atmosVertexShader,
         fragmentShader: atmosFragmentShader,
@@ -88,7 +99,7 @@ export default function BackgroundGalaxy(props) {
       })
     )
 
-    atmosphereMesh.scale.set(1.25, 1.25, 1.25);
+    atmosphereMesh.scale.set(1.02, 1.02, 1.02);
 
 
     // making the stars
@@ -123,7 +134,7 @@ export default function BackgroundGalaxy(props) {
     scene.background = new Color( Number.parseInt(props.background , 16))
 
     // camera
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight , 0.1, 100)
+    const camera = new THREE.PerspectiveCamera(15, window.innerWidth / window.innerHeight , 0.1, 100)
 
     // renderer
 
@@ -141,8 +152,32 @@ export default function BackgroundGalaxy(props) {
 
     scene.add(group, atmosphereMesh, stars)
 
-    camera.position.z = 10;
-    camera.position.y = 0;
+    camera.position.z = 2*radius-7;
+    camera.position.y = 15;
+
+
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setUserPosY(position);
+
+      var pageViewedRatio = position/scrollableLength;
+
+      // update the radius between 13 - 5
+      let radiusRange = startGlobeRadius-5;
+      let currentRadiusChange = radiusRange*pageViewedRatio;
+
+      // more the radius change , more we will deduct from radius
+      let newRadius = startGlobeRadius - currentRadiusChange;
+      setRadius( newRadius );
+
+
+      camera.position.z = (2*radius - 7) * (1-pageViewedRatio);
+      camera.position.y = 15 ;
+
+      // update the camera pos z from 10 - 2*radius-7
+      // update the camera pos y from 0 - 15
+      console.log(`position: ${position + window.innerHeight}, document: ${docHeight}`)
+    };
 
     function animate(){
         requestAnimationFrame( animate )
@@ -164,8 +199,13 @@ export default function BackgroundGalaxy(props) {
           mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
           mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
         })
-        return () => mountRef.current.appendChild( renderer.domElement );
-    });
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+          mountRef.current.appendChild( renderer.domElement );
+          
+        };
+    }, []);
 
     
 
