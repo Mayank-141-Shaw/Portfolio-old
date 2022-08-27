@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <div style={{zIndex:'2', color:'white'}}>
-      <Container fluid style={{backgroundColor:'red', height:'100vh', display:'flex',
+      <Container fluid style={{backgroundColor:'#00000056', height:'100vh', display:'flex',
           flexDirection:'column', alignItems:'center'}}>
         <Container className="text-zone my-auto " >
           <JumboIntro />
