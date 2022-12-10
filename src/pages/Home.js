@@ -19,6 +19,7 @@ import museumWebImg from '../assets/images/projects/museum-web.png'
 import bookStoreImg from '../assets/images/projects/book-store-cover.png'
 import museumLoginImg from '../assets/images/projects/museum-login.png'
 import chatImg from '../assets/images/projects/chat-app.png'
+import TextSphere from '../components/TextSphere/TextSphere'
 
 function Home() {
 
@@ -51,9 +52,9 @@ function Home() {
             typeSpeed={150}
             backSpeed={100} loop/>
         </Row>
-        <Row>
+        <Row style={{alignItems:'center'}}>
           <Col md={6} lg={6} xl={6} style={{
-            fontWeight:'700', fontSize:'1rem', textAlign:'center'
+            fontWeight:'700', fontSize:'1.1rem', textAlign:'center'
           }}>
             I am a Full Stack Developer located in India. I have a passion for creating 
             full stack projects and solutions that can provide dynamic user experience and 
@@ -77,7 +78,7 @@ function Home() {
             and working on ambitious projects with positive people.
           </Col>
           <Col md={6} lg={6} xl={6}>
-            Rotating globe of skills tree
+            <TextSphere />
           </Col>
           
         </Row>

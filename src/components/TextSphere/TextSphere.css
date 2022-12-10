@@ -1,0 +1,29 @@
+.text-sphere{
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: none;
+}
+
+.tagcloud{
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-family: monospace;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1em;
+}
+
+.tagcloud--item{
+    color: #00ffffff;
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover{
+    color: #ff6347;
+}
