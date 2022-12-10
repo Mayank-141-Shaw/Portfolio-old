@@ -163,7 +163,7 @@ export default function BackgroundGalaxy(props) {
 
 
     // rotating the earth on x axis by  20 deg
-    earthMesh.rotateOnAxis(new THREE.Vector3(1,0,0), 20);
+    earthMesh.rotateOnAxis(new THREE.Vector3(1,0,0), Math.PI/180*10);
 
     // adding earth to the group
     group.add(earthMesh)

@@ -9,7 +9,7 @@ const useAudio = url => {
   let mm = new Audio(url);
   mm.loop = true
 
-  const [audio] = useState(mm);
+  const [audio, setAudio] = useState(mm);
   const [playing, setPlaying] = useState(false);
 
   const toggle = () => setPlaying(!playing);
@@ -17,7 +17,7 @@ const useAudio = url => {
   useEffect(() => {
       playing ? audio.play() : audio.pause();
     },
-    [playing]
+    [playing, audio]
   );
 
   useEffect(() => {
@@ -52,6 +52,7 @@ function MusicBox() {
     //     document.getElementById('audio-play').play();
     //   }
     // }, [])
+
 
   return (
     <div className='music-box' onClick={toggle}>
