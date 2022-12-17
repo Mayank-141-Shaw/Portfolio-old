@@ -16,7 +16,7 @@ function TextSphere() {
             const texts =  [...Object.values(SkillData).flat().map( skill => skill.title )]
             const options = {
                 radius: (ref.current.parentElement.offsetWidth - 100)/2,
-
+                depth: 1000,
                 maxSpeed: "normal",
                 initSpeed: "normal",
                 keep: true,
