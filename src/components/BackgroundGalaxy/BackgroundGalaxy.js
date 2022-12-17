@@ -231,6 +231,11 @@ export default function BackgroundGalaxy(props) {
     
 
   return (
-    <div style={{zIndex:'-1', position:"fixed"}} ref={mountRef}></div>
+    <div style={{
+      zIndex:'-1', 
+      position:"fixed", 
+      top:0,
+      backgroundColor:'black'
+    }} ref={mountRef}></div>
   )
 }
