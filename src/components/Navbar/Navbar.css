@@ -37,6 +37,7 @@
 }
 .nav-text:hover{
     background-color: rgb(4, 160, 199);
+    color: white;
 }
 
 .nav-text > a{
@@ -58,3 +59,12 @@
      transform: rotate(180deg);
     }
    }
+
+
+.nav-link{
+    color:white;
+}
+
+.nav-link:hover{
+    color:white;
+}
