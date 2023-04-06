@@ -20,6 +20,8 @@ import museumLoginImg from "../assets/images/projects/museum-login.png";
 import chatImg from "../assets/images/projects/chat-app.png";
 import TextSphere from "../components/TextSphere/TextSphere";
 
+import spongebob from "../assets/images/spongebob.gif";
+
 function Home() {
   const scrollDown = () => {
     let about = document.getElementById("about-tag").getBoundingClientRect();
@@ -110,7 +112,10 @@ function Home() {
             backend) and working on ambitious projects with positive people.
           </Col>
           <Col md={6} lg={6} xl={6}>
-            <TextSphere />
+            {/* <TextSphere /> */}
+            <div className="container">
+              <img src={spongebob} width={"100%"} />
+            </div>
           </Col>
         </Row>
 

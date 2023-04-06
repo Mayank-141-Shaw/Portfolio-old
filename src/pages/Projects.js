@@ -189,8 +189,8 @@ function Projects() {
             <hr style={{ display: 'block', width: '100%', backgroundColor: '#ffffff66' }} />
           </div> */}
 
-          {data.map((item) => {
-            return <ProjectDetailBox info={item} />;
+          {data.map((item, index) => {
+            return <ProjectDetailBox key={index} info={item} />;
           })}
         </Container>
       </Container>
