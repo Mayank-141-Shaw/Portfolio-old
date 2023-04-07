@@ -19,8 +19,8 @@ function App() {
       <Navbar />
       <MusicBox />
       <SocialSideTab />
-      <BackgroundGalaxy />
-      {/* <BackgroundVid /> */}
+      {/* <BackgroundGalaxy /> */}
+      <BackgroundVid />
       <ResumeBtn />
       <Routes>
         <Route exact path="/" element={<Home />} />

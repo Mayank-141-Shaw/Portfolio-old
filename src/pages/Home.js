@@ -112,10 +112,10 @@ function Home() {
             backend) and working on ambitious projects with positive people.
           </Col>
           <Col md={6} lg={6} xl={6}>
-            <TextSphere />
-            {/* <div className="container">
+            {/* <TextSphere /> */}
+            <div className="container">
               <img src={spongebob} width={"100%"} />
-            </div> */}
+            </div>
           </Col>
         </Row>
 
