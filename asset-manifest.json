@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.19172648.css",
-    "main.js": "/Portfolio/static/js/main.81440e8b.js",
+    "main.js": "/Portfolio/static/js/main.7cb95b06.js",
     "static/js/787.79c02c71.chunk.js": "/Portfolio/static/js/787.79c02c71.chunk.js",
     "static/media/dots-bg.mp4": "/Portfolio/static/media/dots-bg.4877a5d40ffd9ad793f0.mp4",
     "static/media/Leviathans-Dream-Sequence.mp3": "/Portfolio/static/media/Leviathans-Dream-Sequence.5b1a8dc8c553d19af82e.mp3",
@@ -65,11 +65,11 @@
     "static/media/spring.png": "/Portfolio/static/media/spring.860accf249c33f036177.png",
     "index.html": "/Portfolio/index.html",
     "main.19172648.css.map": "/Portfolio/static/css/main.19172648.css.map",
-    "main.81440e8b.js.map": "/Portfolio/static/js/main.81440e8b.js.map",
+    "main.7cb95b06.js.map": "/Portfolio/static/js/main.7cb95b06.js.map",
     "787.79c02c71.chunk.js.map": "/Portfolio/static/js/787.79c02c71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19172648.css",
-    "static/js/main.81440e8b.js"
+    "static/js/main.7cb95b06.js"
   ]
 }
