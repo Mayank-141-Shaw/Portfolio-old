@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router";
+import { Routes, Route, Navigate } from "react-router";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Skills from "./pages/Skills";
@@ -19,15 +19,16 @@ function App() {
       <Navbar />
       <MusicBox />
       <SocialSideTab />
-      {/* <BackgroundGalaxy /> */}
-      <BackgroundVid />
+      <BackgroundGalaxy />
+      {/* <BackgroundVid /> */}
       <ResumeBtn />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/project" element={<Projects />} />
         <Route path="/history" element={<History />} />
+        <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
       <Footer />
     </>
